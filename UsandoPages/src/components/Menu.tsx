@@ -21,7 +21,7 @@ export default function Menu() {
     }
 
     return (
-        <ul className="flex justify-between gap-3">
+        <ul className="flex flex-wrap gap-3">
             {renderizarItem('/rotas/basicas', 'Rotas Básicas', 'pt')}
             {renderizarItem('/rotas/basicas/aninhada', 'Rotas Básicas Aninhadas', 'pt')}
             {renderizarItem('/rotas/dinamicas/produto/3', 'Produto #3', 'pt')}
@@ -34,6 +34,7 @@ export default function Menu() {
             {renderizarItem('/render/ssg/filme', 'Filme SSG', 'pt')}
             {renderizarItem('/render/ssg/personagem', 'Api SSG', 'pt')}
             {renderizarItem('/render/ssg/produtos', 'Produto SSG', 'pt')}
+            {renderizarItem('/render/isr', 'Produto ISR', 'pt')}
         </ul>
     )
 }

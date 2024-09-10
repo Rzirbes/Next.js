@@ -1,11 +1,12 @@
 import Pagina from "@/components/Pagina";
 
-export async function getStaticProps() {
-    const resposta = await fetch('http://localhost:3000/api/produtos')
-    const produtos = await resposta.json()
+export async function getServerSideProps() {
+    const resposta = await fetch('http://localhost:3000/api/produtos');
+    const produtos = await resposta.json();
+
     return {
-        props: { produtos }
-    }
+        props: { produtos },
+    };
 }
 
 export default function PaginaProdutos(props: any) {

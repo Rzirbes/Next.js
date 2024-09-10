@@ -2,15 +2,20 @@ import Filme from "@/components/Filme";
 import Pagina from "@/components/Pagina";
 import filmes from "@/data/filmes";
 
-export function getStaticProps(){
+export function getStaticProps() {
     return {
-        props: {filme: filmes[947]}
+        props: {
+            filme: filmes[947],
+            data: new Date().toLocaleTimeString('pt-BR')
+        }
     }
 }
 
-export default function PaginaFilme(props: any){
+export default function PaginaFilme(props: any) {
     return (
         <Pagina>
+            <h1 className="text-4xl">Pagina Filme</h1>
+            <h2 className="text-2xl">Hora de geração: {props.data}</h2>
             <Filme
                 id={props.filme.id}
                 titulo={props.filme.titulo}
