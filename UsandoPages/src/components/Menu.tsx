@@ -32,9 +32,11 @@ export default function Menu() {
             {renderizarItem('/rotas/i18n/saudacao', 'Saudacao Pt', 'pt')}
             {renderizarItem('/render/ssg/simples', 'SSG Simples', 'pt')}
             {renderizarItem('/render/ssg/filme', 'Filme SSG', 'pt')}
+            {renderizarItem('/render/ssg/catalogo/c36f5a9b-7096-4264-9ef1-d11df9353356', 'Catalogo SSG', 'pt')}
             {renderizarItem('/render/ssg/personagem', 'Api SSG', 'pt')}
             {renderizarItem('/render/ssg/produtos', 'Produto SSG', 'pt')}
             {renderizarItem('/render/isr', 'Produto ISR', 'pt')}
+            {renderizarItem('/render/ssr', 'Produto SSR', 'pt')}
         </ul>
     )
 }
