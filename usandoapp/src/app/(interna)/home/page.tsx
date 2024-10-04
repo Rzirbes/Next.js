@@ -1,4 +1,4 @@
-import { IconArrowsJoin, IconBug, IconLoader, IconRoute, IconRouter } from "@tabler/icons-react";
+import { IconApi, IconArrowsJoin, IconBug, IconDatabase, IconLoader, IconRoute, IconRouter } from "@tabler/icons-react";
 import Titulo from "../shared/Titulo";
 import Exercicio from "./Exercicio";
 
@@ -34,6 +34,16 @@ export default function Page() {
                     url="/paralelas" 
                     titulo="Rotas Paralelas" 
                     icone={<IconArrowsJoin/>}
+                />
+                <Exercicio 
+                    url="/estado" 
+                    titulo="Usando Estado" 
+                    icone={<IconDatabase/>}
+                />
+                <Exercicio 
+                    url="/dados" 
+                    titulo="Usando API" 
+                    icone={<IconApi/>}
                 />
             </div>
         </div>

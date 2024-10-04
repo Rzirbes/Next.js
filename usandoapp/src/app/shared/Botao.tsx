@@ -20,7 +20,7 @@ export default function Botao(props: BotaoProps) {
                 }
                 ${props.maior ? 'px-5 py-3' : 'px-2 py-1.5 text-sm'}
                 border border-zinc-600  rounded-lg 
-            `}>
+            `} onClick={props.onClick}>
                 {props.children}
             </button>
         )

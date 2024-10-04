@@ -1,6 +1,6 @@
 'use client'
 
-import { IconArrowsJoin, IconBug, IconLayoutDashboard, IconLoader, IconRoute } from "@tabler/icons-react";
+import { IconApi, IconArrowsJoin, IconBug, IconChartDots3, IconDatabase, IconLayoutDashboard, IconLoader, IconRoute } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 import MenuGrupo from "./MenuGrupo";
 import { usePathname } from "next/navigation";
@@ -48,6 +48,24 @@ export default function Menu() {
                     texto="Rotas Paralelas"
                     icone={<IconArrowsJoin />}
                     selecionado={url === '/paralelas'}
+                />
+                <MenuItem
+                    url="/estado"
+                    texto="Usando Estado"
+                    icone={<IconDatabase />}
+                    selecionado={url === '/estado'}
+                />
+                <MenuItem
+                    url="/dados"
+                    texto="Usando API"
+                    icone={<IconApi />}
+                    selecionado={url === '/dados'}
+                />
+                <MenuItem
+                    url="/contexto/a"
+                    texto="Usando Contexto"
+                    icone={<IconChartDots3/>}
+                    selecionado={url === '/contexto/a' || url === '/contexto/b'}
                 />
             </MenuGrupo>
         </nav>
